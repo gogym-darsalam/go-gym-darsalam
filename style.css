@@ -41,7 +41,7 @@ header {
     align-items: center;
 }
 
-/* Logo Style */
+/* Logo Style d'après WhatsApp Image 2026-06-14 at 13.25.04.jpeg */
 .logo-area {
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@ nav ul a:hover {
     transform: scale(1.03);
 }
 
-/* Section Common Layout */
+/* Section Layout */
 .section {
     padding: 60px 0;
 }
@@ -153,7 +153,7 @@ nav ul a:hover {
     margin: 10px auto 0;
 }
 
-/* Activités Layout */
+/* Activités Grid */
 .activities-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -189,7 +189,70 @@ nav ul a:hover {
     color: var(--text-gray);
 }
 
-/* Grids Généraux */
+/* Planning Table Style */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin-top: 20px;
+}
+
+.planning-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.planning-table th, .planning-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #252525;
+}
+
+.planning-table th {
+    background-color: #000;
+    color: var(--gold);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.planning-table tr:last-child td {
+    border-bottom: none;
+}
+
+.day-cell {
+    font-weight: 600;
+    color: #fff;
+}
+
+.planning-table tr {
+    transition: background-color 0.3s, opacity 0.3s ease;
+}
+
+.planning-table tr:hover {
+    background-color: #252525;
+}
+
+.btn-plan-filter {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-plan-filter.active, .btn-plan-filter:hover {
+    background-color: var(--gold);
+    color: #000;
+}
+
+/* Grids Généraux (Programmes, Exercices, Tarifs) */
 .programs-grid, .exercises-grid, .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -295,7 +358,7 @@ nav ul a:hover {
     margin-bottom: 20px;
 }
 
-/* Footer Style updated */
+/* Footer Style */
 footer {
     padding: 40px 0;
     background-color: #000;
