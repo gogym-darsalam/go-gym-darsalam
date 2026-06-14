@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetMatch Maroc — Trouve le partenaire idéal pour ton animal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-text">PetMatch <em>Maroc</em></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#comment">Comment ça marche</a></li>
+        <li><a href="#animaux">Animaux</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-outline" id="loginBtn">Connexion</button>
+        <button class="btn-primary" id="registerBtn">Publier une annonce</button>
+      </div>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-menu" id="closeMenu">&times;</div>
+    <ul class="mm-links">
+      <li><a href="#comment" class="mm-link">Comment ça marche</a></li>
+      <li><a href="#animaux" class="mm-link">Animaux</a></li>
+      <li><a href="#contact" class="mm-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">🐾 Premier site d'accouplement d'animaux au Maroc</span>
+      <h1>Trouvez le partenaire idéal pour votre animal</h1>
+      <p class="hero-sub">Offrez à votre compagnon à quatre pattes l'opportunité de fonder une famille. Rencontrez des propriétaires sérieux et passionnés partout au Maroc.</p>
+      <div class="hero-cta">
+        <button class="btn-primary btn-large" id="heroPublish">Publier son animal</button>
+        <button class="btn-outline btn-large" id="heroSearch">Chercher un partenaire</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-num" data-target="1200">0</span><span class="stat-lbl">Animaux inscrits</span></div>
+        <div class="stat-item"><span class="stat-num" data-target="450">0</span><span class="stat-lbl">Matchs réussis</span></div>
+        <div class="stat-item"><span class="stat-num" data-target="12">0</span><span class="stat-lbl">Villes du Maroc</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="card-main" style="background-image: url('https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600')"></div>
+      <div class="card-sec" style="background-image: url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=600')"></div>
+    </div>
+  </section>
+
+  <section class="search-bar-section">
+    <div class="search-container">
+      <div class="search-field">
+        <label>Race ou type</label>
+        <input type="text" id="searchRace" placeholder="Ex: Labrador, Berger, Persan..." />
+      </div>
+      <div class="search-field">
+        <label>Sexe</label>
+        <select id="searchSexe">
+          <option value="">Tous les sexes</option>
+          <option value="Mâle">Mâle</option>
+          <option value="Femelle">Femelle</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label>Ville</label>
+        <select id="searchVille">
+          <option value="">Tout le Maroc</option>
+          <option value="Casablanca">Casablanca</option>
+          <option value="Rabat">Rabat</option>
+          <option value="Marrakech">Marrakech</option>
+          <option value="Tanger">Tanger</option>
+          <option value="Fès">Fès</option>
+          <option value="Agadir">Agadir</option>
+        </select>
+      </div>
+      <button class="btn-primary search-btn" id="searchBtn">🔍 Rechercher</button>
+    </div>
+  </section>
+
+  <section class="comment" id="comment">
+    <div class="section-header">
+      <h2>Comment ça marche ?</h2>
+      <p>Trois étapes simples pour trouver le partenaire parfait</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-icon">📝</div>
+        <h3>Créer un profil</h3>
+        <p>Renseignez la race, l'âge, la ville et ajoutez les plus belles photos de votre animal de compagnie.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">🔍</div>
+        <h3>Parcourir & Filtrer</h3>
+        <p>Explorez les profils vérifiés près de chez vous selon vos critères spécifiques d'accouplement.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">💌</div>
+        <h3>Prendre contact</h3>
+        <p>Entrez en relation de manière sécurisée avec le propriétaire pour organiser la rencontre de vos animaux.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="animaux" id="animaux">
+    <div class="section-header">
+      <h2>Dernières annonces vérifiées</h2>
+      <p>Explorez nos coups de cœur récents prêts pour une rencontre</p>
+    </div>
+    <div class="tabs-container">
+      <div class="tab active" data-filter="all">Tous les animaux</div>
+      <div class="tab" data-filter="chien">🐶 Chiens</div>
+      <div class="tab" data-filter="chat">🐱 Chats</div>
+    </div>
+    <div class="cards-grid" id="cardsGrid">
+      </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Votre animal mérite lui aussi de trouver l'amour</h2>
+    <p>Rejoignez la plus grande communauté de propriétaires d'animaux au Maroc dès aujourd'hui.</p>
+    <button class="btn-primary btn-large btn-white" id="ctaPublish">Créer une annonce gratuite</button>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-icon">🐾</span><span class="logo-text">PetMatch</span>
+        <p>Le bien-être et le bonheur de vos compagnons au cœur de nos priorités.</p>
+      </div>
+      <div>
+        <h4>Liens utiles</h4>
+        <ul class="footer-links">
+          <li><a href="#comment">Comment ça marche</a></li>
+          <li><a href="#animaux">Voir les annonces</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact & Admin</h4>
+        <ul class="footer-links" style="color: var(--cream); opacity: 0.8;">
+          <li>📍 Casablanca, Maroc</li>
+          <li>📱 +212 608 006 156</li>
+          <li>✉️ petmatch@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 PetMatch Maroc. Tous droits réservés.
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <div class="modal-close" id="modalClose">&times;</div>
+      <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 1.5rem; color: var(--brown);">Publier une annonce</h2>
+      <div class="modal-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nom de l'animal</label>
+            <input type="text" placeholder="Ex: Max, Bella..." class="form-input"/>
+          </div>
+          <div class="form-group">
+            <label>Race</label>
+            <input type="text" placeholder="Ex: Berger Allemand, Siamois..." class="form-input"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Sexe</label>
+            <select class="form-input">
+              <option>Comme partenaire Mâle</option>
+              <option>Comme partenaire Femelle</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Âge</label>
+            <input type="text" placeholder="Ex: 2 ans" class="form-input"/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ville</label>
+            <select class="form-input">
+              <option>Casablanca</option>
+              <option>Rabat</option>
+              <option>Marrakech</option>
+              <option>Fès</option>
+              <option>Tanger</option>
+              <option>Agadir</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" value="0608006156" class="form-input"/>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Description</label>
+          <textarea class="form-input" rows="3" placeholder="Décris ton animal, ses qualités..."></textarea>
+        </div>
+        <div class="form-group full upload-area" id="uploadArea">
+          <span>📷 Cliquez ici pour prendre/ajouter des photos</span>
+          <input type="file" accept="image/*" multiple hidden id="fileInput"/>
+        </div>
+        <button class="btn-primary full-btn" id="submitBtn">Publier l'annonce</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">✅ Action réussie !</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
