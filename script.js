@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- PARTIE 2: Liaison Directe avec WhatsApp ---
     const pricingButtons = document.querySelectorAll('.interaction-btn');
-    const whatsappNumber = "212678918938"; // Numéro WhatsApp dyl l-sal
+    const whatsappNumber = "212678918938"; 
 
     pricingButtons.forEach(button => {
         button.addEventListener('click', () => {
