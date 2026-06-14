@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOGYM DAR SALAM - Fitness & Musculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo-area">
+                <div class="gold-box">G</div>
+                <div class="logo-text">
+                    <h1>GOGYM</h1>
+                    <p class="location">DAR SALAM</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#activities">Activités</a></li>
+                    <li><a href="#programs">Programmes</a></li>
+                    <li><a href="#exercises">Exercices</a></li>
+                    <li><a href="#pricing">Tarifs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <h2>FITNESS • MUSCULATION • PREMIUM</h2>
+            <p>100% Hommes (H) & 100% Femmes (F)</p>
+            <a href="#pricing" class="btn-gold">Voir les Tarifs</a>
+        </div>
+    </section>
+
+    <section id="activities" class="container section">
+        <h2 class="section-title">Nos Activités</h2>
+        <div class="activities-grid">
+            <div class="activity-card">
+                <div class="activity-icon">🏋️‍♂️</div>
+                <h3>Gym / Musculation</h3>
+                <p>Des équipements de dernière génération pour le renforcement et le développement musculaire.</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🏃‍♂️</div>
+                <h3>Cardio</h3>
+                <p>Tapis, vélos, elliptiques pour améliorer votre endurance et brûler les calories.</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🤸‍♂️</div>
+                <h3>Aérobic</h3>
+                <p>Des cours collectifs rythmés pour sculpter le corps dans une ambiance dynamique.</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🚴‍♂️</div>
+                <h3>Spinning</h3>
+                <p>Entraînement de cyclisme en salle à haute intensité pour un maximum de cardio.</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🏊‍♂️</div>
+                <h3>Piscine</h3>
+                <p>Un espace aquatique complet pour la natation, l'aquagym et la relaxation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="container section">
+        <h2 class="section-title">Nos Programmes</h2>
+        <div class="programs-grid">
+            <div class="card">
+                <h3>Prise de Masse</h3>
+                <p>Un programme intensif combinant des exercices polyarticulaires et une surcharge progressive pour maximiser le gain musculaire.</p>
+            </div>
+            <div class="card">
+                <h3>Perte de Poids / Sèche</h3>
+                <p>Idéal pour brûler les graisses tout en conservant la masse musculaire grâce à un entraînement à haute intensité.</p>
+            </div>
+            <div class="card">
+                <h3>Fitness & Cardio</h3>
+                <p>Améliorez votre endurance cardiovasculaire, votre agilité et votre condition physique globale.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="exercises" class="container section">
+        <h2 class="section-title">Guide des Exercices</h2>
+        
+        <div class="filter-buttons">
+            <button class="btn-filter active" data-target="all">Tout</button>
+            <button class="btn-filter" data-target="debutant">Débutant</button>
+            <button class="btn-filter" data-target="professionnel">Professionnel</button>
+        </div>
+
+        <div class="exercises-grid">
+            <div class="card exercise-card" data-level="debutant">
+                <span class="badge debutant">Débutant</span>
+                <h3>Squat au Poids du Corps</h3>
+                <p><strong>Cible :</strong> Cuisses & Fessiers</p>
+                <p>Parfait pour apprendre le mouvement de base en toute sécurité avant de charger la barre.</p>
+            </div>
+            <div class="card exercise-card" data-level="debutant">
+                <span class="badge debutant">Débutant</span>
+                <h3>Développé Couché (Barre vide)</h3>
+                <p><strong>Cible :</strong> Pectoraux & Triceps</p>
+                <p>Idéal pour maîtriser la trajectoire du mouvement et stabiliser les épaules.</p>
+            </div>
+
+            <div class="card exercise-card" data-level="professionnel">
+                <span class="badge pro">Professionnel</span>
+                <h3>Soulevé de Terre (Deadlift)</h3>
+                <p><strong>Cible :</strong> Chaîne Postérieure</p>
+                <p>Exercice de force pure demandant une technique irréprochable et une grande stabilité.</p>
+            </div>
+            <div class="card exercise-card" data-level="professionnel">
+                <span class="badge pro">Professionnel</span>
+                <h3>Développé Militaire Lourd</h3>
+                <p><strong>Cible :</strong> Épaules & Triceps</p>
+                <p>Mouvement de poussée verticale exigeant pour développer des épaules puissantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="container section">
+        <h2 class="section-title">Nos Tarifs & Abonnements</h2>
+        <div class="pricing-grid">
+            <div class="card pricing-card student-card">
+                <span class="price-badge">Offre Spéciale</span>
+                <h3>Étudiants</h3>
+                <div class="price">500 DH</div>
+                <div class="duration">Pour 3 Mois</div>
+                <p class="pricing-note">* Présentation de la carte d'étudiant obligatoire.</p>
+                <button class="btn-gold interaction-btn" data-type="Étudiant" data-price="500 DH" data-duration="3 Mois">Choisir sur WhatsApp</button>
+            </div>
+
+            <div class="card pricing-card featured">
+                <h3>Mensuel</h3>
+                <div class="price">350 DH</div>
+                <div class="duration">Pour 1 Mois</div>
+                <p class="pricing-note">Accès illimité à toutes les activités de base.</p>
+                <button class="btn-gold interaction-btn" data-type="Mensuel" data-price="350 DH" data-duration="1 Mois">Choisir sur WhatsApp</button>
+            </div>
+
+            <div class="card pricing-card">
+                <h3>Adultes (Long Terme)</h3>
+                <div class="price">1000 DH</div>
+                <div class="duration">Pour 4 Mois</div>
+                <p class="pricing-note">Idéal pour un engagement sérieux et une progression garantie.</p>
+                <button class="btn-gold interaction-btn" data-type="Adulte (Long Terme)" data-price="1000 DH" data-duration="4 Mois">Choisir sur WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 GOGYM DAR SALAM. Tous droits réservés.</p>
+            <p class="footer-maps">
+                <a href="https://maps.app.goo.gl/ovSFi1hqqX2w9bENA" target="_blank" rel="noopener noreferrer">
+                    📍 Notre Localisation sur Google Maps
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
